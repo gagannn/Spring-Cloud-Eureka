@@ -30,3 +30,9 @@ There is another annotation namely `@EnableEurekaClient` that you can use to cre
 
 - `spring.application.name` property is used to indicate the service name. Eureka client service registers in the Eureka server with whatever the name you have provided for this property. Service’s network location will be attached to it’s service name. This value will be used by other microservices to obtain the network location via the service registry. __bootstrap.properties__ file is picked up before the __application.properties__ file by Spring Boot. `spring.application.name` property is used in the earliest phases of service’s configuration. Therefore, by convention, this property should be placed in the __bootstrap.properties__ file but i have used them in __application.properties__.
 - `eureka.client.serviceUrl.defaultZone` indicates the location of the Eureka server. Client service will use this URL to access the Eureka server application. In this particular instance, the URL is set to `http://localhost:8761/eureka` .
+
+---
+
+### ADDITIONAL URLs
+- [Spring Cloud Eureka Doc](https://docs.spring.io/spring-cloud-netflix/docs/current/reference/html/#service-discovery-eureka-clients)
+- [Eureka Blog](https://medium.com/swlh/spring-cloud-service-discovery-with-eureka-16f32068e5c7)
